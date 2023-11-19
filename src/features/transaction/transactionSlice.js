@@ -11,6 +11,7 @@ const initialState = {
   isLoading: false,
   isError: false,
   error: "",
+  editing: {},
 };
 
 // async thunks
@@ -52,7 +53,10 @@ const transactionSlice = createSlice({
   initialState,
   reducers: {
     editActive: (state, action) => {
-      state.editActive = action.payload;
+      state.editing = action.payload;
+    },
+    editInActive: (state, action) => {
+      state.editing = {};
     },
   },
   extraReducers: (builder) => {
@@ -126,3 +130,4 @@ const transactionSlice = createSlice({
 });
 
 export default transactionSlice.reducer;
+export const { editActive, editInActive } = transactionSlice.actions;
