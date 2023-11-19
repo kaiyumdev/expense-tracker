@@ -13,10 +13,16 @@
       "amount": 200000
     },
     {
-      "name": "test",
+      "name": "Slary from Google",
       "type": "expense",
-      "amount": 200,
+      "amount": 10000,
       "id": 3
+    },
+    {
+      "name": "Slary from Google",
+      "type": "income",
+      "amount": 10000,
+      "id": 4
     }
   ]
 }
