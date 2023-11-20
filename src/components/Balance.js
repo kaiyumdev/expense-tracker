@@ -19,6 +19,7 @@ export default function Balance() {
     return income;
   };
   return (
+    //balance amount successfully
     <div className="top_card">
       <p>Your Current Balance</p>
       <h3>
